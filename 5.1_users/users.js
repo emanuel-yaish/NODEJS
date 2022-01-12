@@ -54,7 +54,9 @@ const updateUser = (userID, updatedName, updatedEmail) => {
     if (updatedName) userToUpdate.name = updatedName;
     if (updatedEmail) userToUpdate.email = updatedEmail;
     console.log("User updated");
-    saveUsers(newUsers);
+    saveUsers(users);
+  } else {
+    console.log("user not found");
   }
 };
 
