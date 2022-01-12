@@ -73,7 +73,7 @@ const food = (arr) => {
     el.favoriteFoods.forEach((foodObj) => {
       console.log(foodObj);
       foodObj.meats.forEach((meatItem) => {
-        console.log();
+        console.log(meatItem);
         obj[meatItem] = obj[meatItem] + 1 || 1;
       });
       foodObj.fish.forEach((fishItem) => {
