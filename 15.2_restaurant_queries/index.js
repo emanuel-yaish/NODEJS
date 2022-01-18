@@ -92,6 +92,7 @@ db.restaurants.deleteOne({ _id: ObjectId("61e5f2c70a8f12c8795deead") });
 
 // 1.13 - Delete all restaurants
 
+db.restaurants.deleteMany({});
 db.restaurants.drop();
 
 // 2. forEach Queries
